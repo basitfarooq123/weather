@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="aba" action="/Weather/WeatherForecastRetrievall"  onsubmit="return validateForm()"method="GET">
+  
+
+<div id="three" class="smallheader margintop" >Enter Location</div> <br>
+<input type="text"  id="ab" name="fm" placeholder="Enter address " class="underline"><br><br>
+<input type="text"  id="cd" name="no" placeholder="Enter country" ><br><br>
+<button class="button primary margin margintopxx">Search</button>
+
+
+
+
+<script type = "text/javascript">
+function validateForm()
+{
+  var x = document.forms["aba"]["fm"].value;
+  if (x == null || x == "") 
+    {
+    alert("Address must be filled out");
+    return false; 
+    }
+
+ 
+var y = document.forms["aba"]["no"].value;
+if (y == null || y == "") 
+  {
+  alert("Country must be filled out");
+  return false; 
+  }
+}
+</script> 
+</form>
+</body>
+</html>
